@@ -3,4 +3,31 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="guionMedio">-</string>
+    <string name="tvEdad">Edad:</string>
+    <string name="tvNombre">Nombre:</string>
+    <string name="tvSignoZodiacal">Signo zodiacal:</string>
+    <string name="signo_horoscopo_chino">Signo horoscopo chino:</string>
+    <string name="carrera">Carrera:</string>
+    <string name="numero_de_cuenta">Numero de cuenta:</string>
+    <string name="correo">Correo:</string>
+    <string name="numCuentaEjemplo">418045725</string>
+    <string name="signoChinoEjemplo">Tigre</string>
+    <string name="edgar_tobon_sosa">Edgar Tobon Sosa</string>
+    <string name="_24_a_os_cumplidos">24 años cumplidos</string>
+    <string name="escorpio">Escorpio</string>
+    <string name="ingenieria_mecatr_nica">Ingenieria Mecatrónica</string>
+    <string name="ingresa_tu_informaci_n">Ingresa tu información</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="ingresa_tu_nombre">Ingresa tu nombre</string>
+    <string name="correo_electronico">Correo electronico</string>
+    <string name="numero_de_cuenta_1">Numero de cuenta</string>
+    <string name="selecciona_tu_ingenieria">Selecciona tu Ingenieria</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="ingresa_tu_fecha_de_nacimento">Ingresa tu fecha de nacimento</string>
+    <string name="d_a">Día</string>
+    <string name="mes">Mes</string>
+    <string name="a_o">Año</string>
+    <string name="HelperNombre">Nombre y Apellido(s)</string>
+    <string name="helpercorreo">Cualquier dominio</string>
+    <string name="helperNumCuenta">9 Digitos</string>
 </resources>

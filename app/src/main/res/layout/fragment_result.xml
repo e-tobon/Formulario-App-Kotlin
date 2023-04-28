@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentResultado"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ResultFragment">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/llNombre"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_margin="20dp"
+    >
+
+ <TextView
+     android:id="@+id/tvNombre"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/tvNombre"
+     android:layout_marginEnd="10dp"
+     android:textColor="@color/black"
+     android:textStyle="bold"
+
+     />
+ <TextView
+     android:id="@+id/tvNombreResultado"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     tools:text="@string/edgar_tobon_sosa"
+     />
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/llEdad"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/llNombre"
+    android:layout_margin="20dp"
+    >
+ <TextView
+     android:id="@+id/tvEdad"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/tvEdad"
+     android:layout_marginEnd="10dp"
+     android:textColor="@color/black"
+     android:textStyle="bold"
+
+     />
+ <TextView
+     android:id="@+id/tvEdadResultado"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     tools:text="@string/_24_a_os_cumplidos"
+     />
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+ <androidx.appcompat.widget.LinearLayoutCompat
+     android:id="@+id/llSignoZodiacal"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/llEdad"
+     android:layout_margin="20dp"
+     >
+  <TextView
+      android:id="@+id/tvSignoZodiacal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/tvSignoZodiacal"
+      android:layout_marginEnd="10dp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+
+      />
+
+  <TextView
+      android:id="@+id/tvSignoZodiacalResultado"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="@string/escorpio"
+
+      />
+
+ </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+ <androidx.appcompat.widget.LinearLayoutCompat
+     android:id="@+id/llSignohoroscopoChino"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/llSignoZodiacal"
+     android:layout_margin="20dp"
+     >
+  <TextView
+      android:id="@+id/tvSignoHoroscopoChino"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/signo_horoscopo_chino"
+      android:layout_marginEnd="10dp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+
+      />
+  <TextView
+      android:id="@+id/tvSignoHoroscopoChinoResultado"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="@string/signoChinoEjemplo"
+      />
+
+ </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llSignohoroscopoChino"
+        android:layout_margin="20dp"
+        >
+     <TextView
+         android:id="@+id/tvCorreo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/correo"
+         android:layout_marginEnd="10dp"
+         android:textColor="@color/black"
+         android:textStyle="bold"
+
+         />
+     <TextView
+         android:id="@+id/tvCorreoResultado"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         tools:text="etobon96@gmail.com"
+         />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+ <androidx.appcompat.widget.LinearLayoutCompat
+     android:id="@+id/llNumerodeCuenta"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/llCorreo"
+     android:layout_margin="20dp">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/numero_de_cuenta"
+      android:layout_marginEnd="10dp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+
+      />
+  <TextView
+      android:id="@+id/tvNumeroCuentaResultado"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="@string/numCuentaEjemplo"
+      />
+
+ </androidx.appcompat.widget.LinearLayoutCompat>
+
+ <androidx.appcompat.widget.LinearLayoutCompat
+     android:id="@+id/llCarrera"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/llNumerodeCuenta"
+     android:layout_margin="20dp"
+     android:gravity="center"
+     app:layout_constraintBottom_toTopOf="@id/ivCarrera"
+     app:layout_constraintVertical_chainStyle="packed"
+     >
+  <TextView
+      android:id="@+id/CarreraResultado"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/ingenieria_mecatr_nica"
+      android:layout_marginEnd="10dp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      app:layout_constraintVertical_chainStyle="packed"
+      />
+
+
+ </androidx.appcompat.widget.LinearLayoutCompat>
+
+ <ImageView
+     android:id="@+id/ivCarrera"
+     tools:ignore="contentDescription"
+     android:layout_width="200dp"
+     android:layout_height="300dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/llCarrera"
+    app:layout_constraintVertical_bias="0"
+     />
+</androidx.constraintlayout.widget.ConstraintLayout>

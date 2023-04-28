@@ -1,11 +1,25 @@
 package com.example.formulario.Model
 
+import android.os.Parcelable
 import android.widget.Toast
+import kotlinx.parcelize.Parcelize
 import java.util.Date
 
-class Alumno(private var name:String,
-             private var lastName:String,
-             ) {
+@Parcelize
+class Alumno(private var name:String
+             ) : Parcelable {
+
+    var edad:Int? = null
+    set(value){
+        if(value!! >= 0){
+            field = value
+        }
+    }
+
+    var Ingenieria:String? = null
+        set(value){
+            field = value!!
+            }
 
     var numeroDeCuenta:String? = null
     set(value){
@@ -14,12 +28,21 @@ class Alumno(private var name:String,
         }
     }
 
+    var signoZodiaco:String? = null
+
+    var horoscopoChino:String? = null
+
+
+
     var email:String? = null
     set(value){
         if (value!!.contains('@')){
             field = value
         }
+
     }
+
+
 
     //Mark:- Getters and Setters Methods
     fun setName(n:String){
@@ -28,12 +51,7 @@ class Alumno(private var name:String,
     fun getName():String{
         return this.name
     }
-    fun setLastName(ln:String){
-        this.lastName = ln
-    }
-    fun getLastName():String{
-        return this.lastName
-    }
+
 
 
     companion object{

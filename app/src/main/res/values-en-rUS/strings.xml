@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Form</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guionMedio">-</string>
+    <string name="tvEdad">Age:</string>
+    <string name="tvNombre">Name:</string>
+    <string name="tvSignoZodiacal">Zodiac sign:</string>
+    <string name="signo_horoscopo_chino">Chinese sign:</string>
+    <string name="carrera">Career:</string>
+    <string name="numero_de_cuenta">Account Number:</string>
+    <string name="correo">Email:</string>
+    <string name="numCuentaEjemplo">418045725</string>
+    <string name="signoChinoEjemplo">Tigger</string>
+    <string name="edgar_tobon_sosa">Edgar Tobon Sosa</string>
+    <string name="_24_a_os_cumplidos">24 years old</string>
+    <string name="escorpio">Escorpio</string>
+    <string name="ingenieria_mecatr_nica">Mechatronic Engeenier</string>
+    <string name="ingresa_tu_informaci_n">Please complete the form</string>
+    <string name="siguiente">Next</string>
+    <string name="ingresa_tu_nombre">Enter your name</string>
+    <string name="correo_electronico">Email</string>
+    <string name="numero_de_cuenta_1">Account Number</string>
+    <string name="selecciona_tu_ingenieria">Select your career</string>
+    <string name="ingresar">Enter</string>
+    <string name="ingresa_tu_fecha_de_nacimento">Enter your birthday</string>
+    <string name="d_a">Day</string>
+    <string name="mes">Month</string>
+    <string name="a_o">Year</string>
+    <string name="HelperNombre">Name and Lastname</string>
+    <string name="helpercorreo">Any domain</string>
+    <string name="helperNumCuenta">9 digits</string>
+</resources>

@@ -1,7 +1,10 @@
 package com.example.formulario.ui
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.AttributeSet
+import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.EditText
@@ -16,6 +19,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        if(savedInstanceState == null){
+            val transaction=supportFragmentManager.beginTransaction()
+            val firstFragment =FormFragment()
+            transaction.add(R.id.FormFragmentContainer,firstFragment).commit()
+        }
+
+
 
     }
+
 }
