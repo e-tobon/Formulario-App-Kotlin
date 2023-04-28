@@ -1,41 +1,14 @@
 # Formulario
 
-Foobar is a Python library for dealing with word pluralization.
+Para esta aplicacion se hizo uso de dos fragments el primero se utilizo para hacer el formulario y el segundo para mostrar los resultados.
 
-![](imagenes/Formlario.png){width='100px'}
 
-## Installation
+## Lenguaje
+-kotlin
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
-
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+## API minima
+-23
 
 ## Librerias
-Libreria para gif animados
 -implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
 
-[MIT](https://choosealicense.com/licenses/mit/)
