@@ -46,6 +46,7 @@ class Alumno(private var name:String
 
     //Mark:- Getters and Setters Methods
     fun setName(n:String){
+
         this.name = n
     }
     fun getName():String{
