@@ -1,6 +1,8 @@
-# Foobar
+# Formulario
 
 Foobar is a Python library for dealing with word pluralization.
+
+![](/home/etbn/Downloads/Formlario.png){width='100px'}
 
 ## Installation
 
@@ -32,6 +34,8 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-## License
+## Librerias
+Libreria para gif animados
+-implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
 
 [MIT](https://choosealicense.com/licenses/mit/)
