@@ -41,7 +41,13 @@ class ResultFragment : Fragment() {
         var ivIngenieria: ImageView = view.findViewById(R.id.ivCarrera)
 
         tvnombreResultado.text = alumnoFI?.getName() ?: "null"
-        tvEdadResultado.text = "${alumnoFI?.edad.toString()} años cumplidos" ?: "null"
+        if(alumnoFI?.edad==1){
+            tvEdadResultado.text = "${alumnoFI?.edad.toString()} " + getString(R.string.año_cumplido) ?: "null"
+        }
+        else{
+            tvEdadResultado.text = "${alumnoFI?.edad.toString()} "+ getString(R.string.años_cumplidos) ?: "null"
+        }
+
         tvSignoZodiacoResultado.text = alumnoFI?.signoZodiaco
         tvSignoChinoResultado.text = alumnoFI?.horoscopoChino
         tvCorreo.text = alumnoFI?.email

@@ -25,23 +25,6 @@ class FormFragment : Fragment() {
     private lateinit var alumno: Alumno
     private lateinit var carreraAdapter: ArrayAdapter<String>
     private val carrerasList = Alumno.CarrerasIngenieria
-    var carreras2List = arrayListOf<String>(
-        "Ingeniería Aeroespacial",
-        "Ingenieria Civil",
-        "Ingeniería Geomática",
-        "Ingeniería Ambiental",
-        "Ingeniería Geofísica",
-        "Ingeniería Geológica",
-        "Ingeniería Petrolera",
-        "Ingeniería de Minas y Metalurgia",
-        "Ingeniería en Computación",
-        "Ingeniería Eléctrica Electrónica",
-        "Ingeniería en Telecomunicaciones",
-        "Ingeniería Mecánica",
-        "Ingeniería Industrial",
-        "Ingeniería Mecatrónica",
-        "Ingeniería en Sistemas Biomédicos")
-
     private var indexCarrera:Int? = null
     private var edadAlumno: Int? = null
     private var signoZodiacal:String? = null
@@ -60,6 +43,22 @@ class FormFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        var carreras2List = arrayListOf<String>(
+            getString(R.string.AEROESPACIAL),
+            getString(R.string.CIVIL),
+            getString(R.string.GEOMATICA),
+            getString(R.string.AMBIENTAL),
+            getString(R.string.GEOFISICA),
+            getString(R.string.GEOLOGICA),
+            getString(R.string.PETROLERA),
+            getString(R.string.MINAS_METALURGIA),
+            getString(R.string.COMPUTACION),
+            getString(R.string.ELECTRICA_ELECTRONICA),
+            getString(R.string.TELECOMUNICACIONES),
+            getString(R.string.MECANICA),
+            getString(R.string.INDUSTRIAL),
+            getString(R.string.MECATRONICA),
+            getString(R.string.SISTEMAS_BIOMEDICOS))
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_form, container, false)
         etNombre = view.findViewById(R.id.tiNombre)
@@ -70,6 +69,8 @@ class FormFragment : Fragment() {
         carrerasCompleteTV.setAdapter(carreraAdapter)
         carrerasCompleteTV.setOnItemClickListener{_,_,i,_ ->
             indexCarrera = i
+
+
         }
 
 
@@ -169,7 +170,6 @@ class FormFragment : Fragment() {
 
         }
         else{
-            alumno.edad = 25
             Toast.makeText(context, getString(R.string.ToasNaciemiento), Toast.LENGTH_SHORT).show()
         }
 
@@ -235,8 +235,6 @@ class FormFragment : Fragment() {
         }
 
 
-
-
     }
 
         private fun calcularEdad(diaDeNacimiento:Int,mesDeNacimineto:Int,añoDeNacimiento:Int){
@@ -247,7 +245,7 @@ class FormFragment : Fragment() {
             val añoActual:Int = Calendario.get(Calendar.YEAR)
 
             if(mesActual >= mesDeNacimineto){
-                if(diaDeNacimiento>diaActual){
+                if(diaDeNacimiento>=diaActual){
                     edadAlumno = añoActual - añoDeNacimiento
                 }
                 else{

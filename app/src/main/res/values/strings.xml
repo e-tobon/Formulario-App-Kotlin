@@ -86,8 +86,24 @@
     <string name="toas_nombre">Ingresa tu nombre</string>
     <string name="toast_date">La fecha no es valida</string>
 
-
-
+    <!--CARRERAS FI-->
+    <string name="AEROESPACIAL">Ingeniería Aeroespacial</string>
+    <string name="CIVIL">Ingenieria Civil</string>
+    <string name="GEOMATICA">Ingeniería Geomática</string>
+    <string name="AMBIENTAL">Ingeniería Ambiental</string>
+    <string name="GEOFISICA">Ingeniería Geofísica</string>
+    <string name="GEOLOGICA">Ingeniería Geológica</string>
+    <string name="PETROLERA">Ingeniería Petrolera</string>
+    <string name="MINAS_METALURGIA">Ingeniería de Minas y Metalurgia</string>
+    <string name="COMPUTACION">Ingeniería en Computación</string>
+    <string name="ELECTRICA_ELECTRONICA">Ingeniería Eléctrica Electrónica</string>
+    <string name="TELECOMUNICACIONES">Ingeniería en Telecomunicaciones</string>
+    <string name="MECANICA">Ingeniería Mecánica</string>
+    <string name="INDUSTRIAL">Ingeniería Industrial</string>
+    <string name="MECATRONICA">Ingeniería Mecatrónica</string>
+    <string name="SISTEMAS_BIOMEDICOS">Ingeniería en Sistemas Biomédicos</string>
+    <string name="años_cumplidos">años cumplidos</string>
+    <string name="año_cumplido">año cumplido</string>
 
 
 </resources>

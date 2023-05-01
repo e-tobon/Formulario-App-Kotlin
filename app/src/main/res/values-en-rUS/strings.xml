@@ -73,4 +73,21 @@
     <string name="toast_nombre">Please enter your full name</string>
     <string name="toas_nombre">Please enter your full name</string>
     <string name="toast_date">Sorry, this date is invalid</string>
+    <string name="AEROESPACIAL">Aerospace engineering</string>
+    <string name="CIVIL">Civil Engineering</string>
+    <string name="GEOMATICA">Geomatic Engineering</string>
+    <string name="AMBIENTAL">Environmental engineering</string>
+    <string name="GEOFISICA">Geophysical Engineering</string>
+    <string name="GEOLOGICA">Geological Engineering</string>
+    <string name="PETROLERA">Petroleum engineering</string>
+    <string name="MINAS_METALURGIA">Mining and Metallurgical Engineering</string>
+    <string name="COMPUTACION">Mining and Metallurgical Engineering</string>
+    <string name="ELECTRICA_ELECTRONICA">Electronic Electrical Engineering</string>
+    <string name="TELECOMUNICACIONES">Telecommunications engineering</string>
+    <string name="MECANICA">Mechanical Engineering</string>
+    <string name="INDUSTRIAL">Industrial engineering</string>
+    <string name="MECATRONICA">Mechatronics Engineering</string>
+    <string name="SISTEMAS_BIOMEDICOS">Engineering in Biomedical Systems</string>
+    <string name="años_cumplidos">years old</string>
+    <string name="año_cumplido">years old</string>
 </resources>
