@@ -115,7 +115,6 @@ class FormFragment : Fragment() {
             && alumnoInput.edad != null
             && alumnoInput.Ingenieria != null
             && alumnoInput.numeroDeCuenta !=null
-            && alumnoInput.signoZodiaco != null
             && alumnoInput.horoscopoChino != null)  {
             Navegacion(alumnoInput)
         }
@@ -256,7 +255,7 @@ class FormFragment : Fragment() {
         if(mesDeNacimineto == 8 && diaDeNacimiento>=24 || mesDeNacimineto == 9 && diaDeNacimiento <=21 ){ return "Libra"}
         if(mesDeNacimineto == 1 && diaDeNacimiento>=19 || mesDeNacimineto == 2 && diaDeNacimiento <=20 ){ return "Piscis"}
         if(mesDeNacimineto == 10 && diaDeNacimiento>=22 || mesDeNacimineto == 11 && diaDeNacimiento <=21 ){ return "Sagitario"}
-        if(mesDeNacimineto == 4 && diaDeNacimiento>=22 || mesDeNacimineto == 5 && diaDeNacimiento <=21 ){ return "Tauro"}
+        if(mesDeNacimineto == 3 && diaDeNacimiento>=22 || mesDeNacimineto == 4 && diaDeNacimiento <=21 ){ return "Tauro"}
         if(mesDeNacimineto == 7 && diaDeNacimiento>=22 || mesDeNacimineto == 8 && diaDeNacimiento <=23 ){ return "Virgo"}
 
         else{
