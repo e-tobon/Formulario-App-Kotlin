@@ -30,6 +30,7 @@ class FormFragment : Fragment() {
     private var signoZodiacal:String? = null
     private var signoChino:String? =null
     private var fechaValida:Boolean = false
+    var carreras2List = arrayListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,7 +44,7 @@ class FormFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var carreras2List = arrayListOf<String>(
+             carreras2List = arrayListOf<String>(
             getString(R.string.AEROESPACIAL),
             getString(R.string.CIVIL),
             getString(R.string.GEOMATICA),
@@ -158,7 +159,7 @@ class FormFragment : Fragment() {
         }
 
         if(indexCarrera!=null){
-            alumno.Ingenieria = carrerasList[indexCarrera!!]
+            alumno.Ingenieria = carreras2List[indexCarrera!!]
 
         }
         else{

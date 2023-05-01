@@ -90,4 +90,6 @@
     <string name="SISTEMAS_BIOMEDICOS">Engineering in Biomedical Systems</string>
     <string name="años_cumplidos">years old</string>
     <string name="año_cumplido">years old</string>
+    <string name="Resultado">Result</string>
+    <string name="Formulario">Form</string>
 </resources>

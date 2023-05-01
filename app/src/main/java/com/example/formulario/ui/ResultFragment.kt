@@ -56,21 +56,21 @@ class ResultFragment : Fragment() {
 
         when(alumnoFI!!.Ingenieria){
 
-            "Ingeniería Aeroespacial" -> ivIngenieria.setImageResource(R.drawable.aeroespacial)
-            "Ingenieria Civil" ->ivIngenieria.setImageResource(R.drawable.civil)
-            "Ingeniería Geomática"->ivIngenieria.setImageResource(R.drawable.geomatica)
-            "Ingeniería Ambiental" ->ivIngenieria.setImageResource(R.drawable.ambiental)
-            "Ingeniería Geofísica" ->ivIngenieria.setImageResource(R.drawable.geofisica)
-            "Ingeniería Geológica"->ivIngenieria.setImageResource(R.drawable.geologica)
-            "Ingeniería Petrolera" ->ivIngenieria.setImageResource(R.drawable.petrolera)
-            "Ingeniería de Minas y Metalurgia" ->ivIngenieria.setImageResource(R.drawable.minas)
-            "Ingeniería en Computación" ->ivIngenieria.setImageResource(R.drawable.computacion)
-            "Ingeniería Eléctrica Electrónica" ->ivIngenieria.setImageResource(R.drawable.electrica)
-            "Ingeniería en Telecomunicaciones" ->ivIngenieria.setImageResource(R.drawable.telecom)
-            "Ingeniería Mecánica" ->ivIngenieria.setImageResource(R.drawable.mecanica)
-            "Ingeniería Industrial" ->ivIngenieria.setImageResource(R.drawable.industrial)
-            "Ingeniería Mecatrónica" ->ivIngenieria.setImageResource(R.drawable.mecatronica)
-            "Ingeniería en Sistemas Biomédicos" ->ivIngenieria.setImageResource(R.drawable.biomedicos)
+            getString(R.string.AEROESPACIAL) -> ivIngenieria.setImageResource(R.drawable.aeroespacial)
+            getString(R.string.CIVIL) ->ivIngenieria.setImageResource(R.drawable.civil)
+            getString(R.string.GEOMATICA)->ivIngenieria.setImageResource(R.drawable.geomatica)
+            getString(R.string.AMBIENTAL) ->ivIngenieria.setImageResource(R.drawable.ambiental)
+            getString(R.string.GEOFISICA) ->ivIngenieria.setImageResource(R.drawable.geofisica)
+            getString(R.string.GEOLOGICA)->ivIngenieria.setImageResource(R.drawable.geologica)
+            getString(R.string.PETROLERA) ->ivIngenieria.setImageResource(R.drawable.petrolera)
+            getString(R.string.MINAS_METALURGIA) ->ivIngenieria.setImageResource(R.drawable.minas)
+            getString(R.string.COMPUTACION) ->ivIngenieria.setImageResource(R.drawable.computacion)
+            getString(R.string.ELECTRICA_ELECTRONICA) ->ivIngenieria.setImageResource(R.drawable.electrica)
+            getString(R.string.TELECOMUNICACIONES) ->ivIngenieria.setImageResource(R.drawable.telecom)
+            getString(R.string.MECANICA)->ivIngenieria.setImageResource(R.drawable.mecanica)
+            getString(R.string.INDUSTRIAL) ->ivIngenieria.setImageResource(R.drawable.industrial)
+            getString(R.string.MECATRONICA)->ivIngenieria.setImageResource(R.drawable.mecatronica)
+            getString(R.string.SISTEMAS_BIOMEDICOS) ->ivIngenieria.setImageResource(R.drawable.biomedicos)
             else -> {
                 println("No carrera")
             }
@@ -86,7 +86,7 @@ class ResultFragment : Fragment() {
 
         mactivity = activity as? MainActivity
         mactivity?.supportActionBar?.setDisplayHomeAsUpEnabled(false)
-        mactivity?.supportActionBar?.title = "Resultados"
+        mactivity?.supportActionBar?.title = getString(R.string.Resultado)
 
 
 
@@ -96,9 +96,7 @@ class ResultFragment : Fragment() {
 
     override fun onDestroy() {
         mactivity?.supportActionBar?.setDisplayHomeAsUpEnabled(false)
-        mactivity?.supportActionBar?.title = "Formulario"
-
-
+        mactivity?.supportActionBar?.title = getString(R.string.Formulario)
         super.onDestroy()
     }
 

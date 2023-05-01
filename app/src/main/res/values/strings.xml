@@ -104,6 +104,8 @@
     <string name="SISTEMAS_BIOMEDICOS">Ingeniería en Sistemas Biomédicos</string>
     <string name="años_cumplidos">años cumplidos</string>
     <string name="año_cumplido">año cumplido</string>
+    <string name="Resultado">Resultados</string>
+    <string name="Formulario">Formulario</string>
 
 
 </resources>
