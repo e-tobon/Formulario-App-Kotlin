@@ -186,8 +186,7 @@
             app:iconTint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
 
-
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvDia"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
@@ -211,15 +210,15 @@
             android:id="@+id/tvDia"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="@string/guionMedio"
+            tools:text="@string/guionMedio"
             android:textSize="20sp"
             android:textColor="@color/black"
-            app:layout_constraintStart_toEndOf="@id/coordLayoutButton"
-            app:layout_constraintEnd_toStartOf="@+id/tvMes"
+           app:layout_constraintStart_toEndOf="@id/coordLayoutButton"
             app:layout_constraintTop_toBottomOf="@+id/tvFechaNacimiento"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.15"
-            android:padding="10dp"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintEnd_toStartOf="@id/tvMes"
+            android:layout_marginRight="5dp"
             app:layout_constraintHorizontal_chainStyle="packed"
             />
 
@@ -227,70 +226,36 @@
             android:id="@+id/tvMes"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="@string/guionMedio"
-            android:padding="10dp"
+            tools:text="@string/guionMedio"
+
             android:textSize="20sp"
             android:textColor="@color/black"
             app:layout_constraintStart_toEndOf="@+id/tvDia"
             app:layout_constraintTop_toBottomOf="@+id/tvFechaNacimiento"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/tvAño"
-            app:layout_constraintVertical_bias="0.15"
+            app:layout_constraintVertical_bias="0.2"
+            android:layout_marginRight="5dp"
             />
         <TextView
             android:id="@+id/tvAño"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="@string/guionMedio"
-            android:padding="10dp"
+            tools:text="@string/guionMedio"
+
             android:layout_marginEnd="30dp"
             android:textSize="20sp"
             android:textColor="@color/black"
             app:layout_constraintStart_toEndOf="@+id/tvMes"
             app:layout_constraintTop_toBottomOf="@+id/tvFechaNacimiento"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.15"
+            app:layout_constraintVertical_bias="0.2"
             app:layout_constraintEnd_toEndOf="parent"
             />
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="@string/d_a"
-        app:layout_constraintStart_toEndOf="@id/coordLayoutButton"
-        app:layout_constraintEnd_toStartOf="@+id/tvMes"
-        app:layout_constraintTop_toBottomOf="@+id/tvDia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0"
-        android:padding="10dp"
 
-        />
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/mes"
-        android:padding="10dp"
-        app:layout_constraintStart_toEndOf="@+id/tvDia"
-        app:layout_constraintTop_toBottomOf="@+id/tvMes"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tvAño"
-        app:layout_constraintVertical_bias="0"
-        />
-    <TextView
 
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/a_o"
-        android:padding="10dp"
-        android:layout_marginEnd="45dp"
-        app:layout_constraintStart_toEndOf="@+id/tvMes"
-        app:layout_constraintTop_toBottomOf="@+id/tvAño"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

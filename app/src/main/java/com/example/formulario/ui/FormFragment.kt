@@ -245,20 +245,23 @@ class FormFragment : Fragment() {
             val mesActual:Int = Calendario.get(Calendar.MONTH)
             val añoActual:Int = Calendario.get(Calendar.YEAR)
 
-            if(mesActual >= mesDeNacimineto){
 
+            if(mesActual > mesDeNacimineto){
                 if(diaDeNacimiento>diaActual){
-                    edadAlumno = (añoActual - añoDeNacimiento) -1
-                    if (edadAlumno!! < 0){
-                        edadAlumno = 0
-                    }
+                    edadAlumno = (añoActual - añoDeNacimiento)
                 }
                 else if(diaDeNacimiento<=diaActual){
                     edadAlumno = (añoActual-añoDeNacimiento)
                 }
             }
             else{
-                edadAlumno = (añoActual-añoDeNacimiento)-1
+                if(diaActual<diaDeNacimiento){
+                    edadAlumno = (añoActual-añoDeNacimiento)-1
+                }
+                else{
+                    edadAlumno = (añoActual-añoDeNacimiento)
+                }
+
             }
             println("$edadAlumno")
         }
