@@ -106,6 +106,8 @@
     <string name="año_cumplido">año cumplido</string>
     <string name="Resultado">Resultados</string>
     <string name="Formulario">Formulario</string>
+    <string name="cumpleas">Cumpleaños</string>
+    <string name="cumple">Cumpleaños</string>
 
 
 </resources>

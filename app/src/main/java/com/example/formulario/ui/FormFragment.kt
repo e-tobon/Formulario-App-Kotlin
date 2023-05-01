@@ -1,6 +1,7 @@
 package com.example.formulario.ui
 
 import android.os.Bundle
+import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,13 +12,15 @@ import com.example.formulario.Model.Alumno
 import com.example.formulario.Model.DatePicker
 import com.example.formulario.R
 import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 import java.util.*
 
 
 class FormFragment : Fragment() {
-    private lateinit var tvDia: TextView
-    private lateinit var tvMes: TextView
-    private lateinit var tvAño: TextView
+    private  var tvDia: String? = null
+    private  var tvMes: String? = null
+    private  var tvAño: String? = null
+    private lateinit var inputFecha: TextInputEditText
     private lateinit var etNombre: TextInputEditText
     private lateinit var etCorreo: TextInputEditText
     private lateinit var etNumeroDeCuento:TextInputEditText
@@ -62,6 +65,7 @@ class FormFragment : Fragment() {
             getString(R.string.SISTEMAS_BIOMEDICOS))
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_form, container, false)
+        inputFecha = view.findViewById(R.id.cumpleaños)
         etNombre = view.findViewById(R.id.tiNombre)
         etCorreo = view.findViewById(R.id.tiCorreo)
         etNumeroDeCuento = view.findViewById(R.id.tiNumeroDeCuenta)
@@ -78,9 +82,7 @@ class FormFragment : Fragment() {
 
 
         println(carrerasCompleteTV.text)
-         tvDia = view.findViewById(R.id.tvDia)
-         tvMes = view.findViewById(R.id.tvMes)
-         tvAño = view.findViewById(R.id.tvAño)
+
 
 
 
@@ -197,6 +199,7 @@ class FormFragment : Fragment() {
         val mesActual:Int = Calendario.get(Calendar.MONTH)
         val añoActual:Int = Calendario.get(Calendar.YEAR)
 
+
         if( año< añoActual){
             fechaValida = true
         }
@@ -208,29 +211,30 @@ class FormFragment : Fragment() {
         }
 
         if(fechaValida== true){
+            tvAño =año.toString()
             fechaValida = false
             calcularEdad(dia,mes,año)
 
             signoZodiacal = calcularZignoZodiaco(dia,mes)
             signoChino = signoHoroscopoChino(año)
 
-            tvDia.text = dia.toString()
+            tvDia = dia.toString()
             when(mes){
-                0 -> tvMes.text = getString(R.string.ENERO)
-                1 -> tvMes.text = getString(R.string.FEBRERO)
-                2 -> tvMes.text = getString(R.string.MARZO)
-                3 -> tvMes.text = getString(R.string.ABRIL)
-                4 -> tvMes.text = getString(R.string.MAYO)
-                5 -> tvMes.text = getString(R.string.JUNIO)
-                6 -> tvMes.text = getString(R.string.JULIO)
-                7 -> tvMes.text = getString(R.string.AGOSTO)
-                8 -> tvMes.text = getString(R.string.SEPTIEMBRE)
-                9 -> tvMes.text = getString(R.string.OCTUBRE)
-                10 -> tvMes.text = getString(R.string.NOVIEMBRE)
-                11 -> tvMes.text = getString(R.string.DICIEMBRE)
-                else -> tvMes.text = null
+                0 -> tvMes = getString(R.string.ENERO)
+                1 -> tvMes = getString(R.string.FEBRERO)
+                2 -> tvMes = getString(R.string.MARZO)
+                3 -> tvMes = getString(R.string.ABRIL)
+                4 -> tvMes = getString(R.string.MAYO)
+                5 -> tvMes = getString(R.string.JUNIO)
+                6 -> tvMes = getString(R.string.JULIO)
+                7 -> tvMes = getString(R.string.AGOSTO)
+                8 -> tvMes = getString(R.string.SEPTIEMBRE)
+                9 -> tvMes = getString(R.string.OCTUBRE)
+                10 -> tvMes = getString(R.string.NOVIEMBRE)
+                11 -> tvMes = getString(R.string.DICIEMBRE)
+                else -> tvMes = null
             }
-            tvAño.text = año.toString()
+           inputFecha.setText("$tvDia de $tvMes  $tvAño")
         }else{
             Toast.makeText(context, getString(R.string.toast_date), Toast.LENGTH_SHORT).show()
         }

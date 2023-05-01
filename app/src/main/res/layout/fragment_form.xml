@@ -6,143 +6,117 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.FormFragment">
 
-
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/ingresa_tu_informaci_n"
-        android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.05"
-        android:textSize="18sp"
-        />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/BtnAvanzar"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="48dp"
-        android:background="#7C2FFA"
-        android:padding="20dp"
-        android:text="@string/siguiente"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etNombre"
+    <LinearLayout
+        android:id="@+id/containerLinear"
+        app:layout_constraintVertical_bias="0.2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/ingresa_tu_nombre"
-        app:helperText="@string/HelperNombre"
-        app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/ic_user"
-        app:startIconTint="@color/purple_500"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:padding="10dp"
-        app:layout_constraintVertical_bias="0.1"
-        android:background="@color/white"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintWidth_max="320dp"
         >
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tiNombre"
+        <TextView
+            android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-
+            android:text="@string/ingresa_tu_informaci_n"
+            android:gravity="center"
+            android:textSize="18sp"
             />
 
-    </com.google.android.material.textfield.TextInputLayout>
-
-<com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/etEmail"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toBottomOf="@id/etNombre"
-    app:layout_constraintStart_toStartOf="parent"
-    android:layout_marginStart="30dp"
-    android:layout_marginEnd="30dp"
-    android:hint="@string/correo_electronico"
-    app:helperText="@string/helpercorreo"
-    app:startIconTint="@color/purple_500"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:endIconMode="clear_text"
-    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-    app:startIconDrawable="@drawable/ic_email"
-    android:padding="10dp"
-    android:background="@color/white"
-    >
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/tiCorreo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
 
 
-        />
-</com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etNumeroCuenta"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/numero_de_cuenta_1"
-        app:layout_constraintTop_toBottomOf="@id/etEmail"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:padding="10dp"
-        app:startIconTint="@color/purple_500"
-        app:helperText="@string/helperNumCuenta"
-        app:startIconDrawable="@drawable/ic_student"
-        app:counterEnabled="true"
-        app:counterMaxLength="9"
-        android:background="@color/white"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tiNumeroDeCuenta"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etNombre"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:hint="@string/ingresa_tu_nombre"
+            app:helperText="@string/HelperNombre"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_user"
+            app:startIconTint="@color/purple_500"
+            android:padding="10dp"
+            android:background="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/correo_electronico"
+            app:helperText="@string/helpercorreo"
+            app:startIconTint="@color/purple_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:startIconDrawable="@drawable/ic_email"
+            android:padding="10dp"
+            android:background="@color/white"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
 
 
-            />
+                />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etNumeroCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/numero_de_cuenta_1"
+            app:layout_constraintTop_toBottomOf="@id/etEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            app:startIconTint="@color/purple_500"
+            app:helperText="@string/helperNumCuenta"
+            app:startIconDrawable="@drawable/ic_student"
+            app:counterEnabled="true"
+            app:counterMaxLength="9"
+            android:background="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/SpinnerCarreras"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:padding="10dp"
-        app:endIconMode="dropdown_menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:startIconTint="@color/purple_500"
-        app:layout_constraintTop_toBottomOf="@id/etNumeroCuenta"
-        app:startIconDrawable="@drawable/ic_ingenieria"
-        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiNumeroDeCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/SpinnerCarreras"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            app:endIconMode="dropdown_menu"
+            app:startIconTint="@color/purple_500"
+            app:startIconDrawable="@drawable/ic_ingenieria"
+            >
 
         <AutoCompleteTextView
             android:id="@+id/DropCarreras"
@@ -150,33 +124,52 @@
             android:layout_height="match_parent"
             android:hint="@string/selecciona_tu_ingenieria"
             android:inputType="none"
-            android:padding="10dp"
+            android:padding="15dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/BtnAvanzar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="#7C2FFA"
+            android:text="@string/siguiente"
+            android:textColor="@color/white"
             />
-    </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvFechaNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/ingresa_tu_fecha_de_nacimento"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/containerLinear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordLayoutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.75"
-        app:layout_constraintHorizontal_bias="0"
-
-
+        app:layout_constraintTop_toBottomOf="@id/tvFechaNacimiento"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
         >
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/btnCalendario"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:backgroundTint="#7C2FFA"
+            android:layout_marginStart="10sp"
             android:contentDescription="@string/app_name"
             android:text="@string/ingresar"
             android:textColor="@color/white"
@@ -184,77 +177,36 @@
             app:backgroundTint="#FFFFFF"
             app:icon="@drawable/ic_calendar"
             app:iconTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
+            />
 
-            app:layout_constraintEnd_toStartOf="@id/tvDia"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-    <TextView
-        android:id="@+id/tvFechaNacimiento"
-        android:layout_width="0dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ingresa_tu_fecha_de_nacimento"
-        android:layout_marginStart="30dp"
-        android:gravity="start"
-        app:layout_constraintStart_toStartOf="parent"
+        android:minWidth="200dp"
+
+
+        android:padding="10dp"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/coordLayoutButton"
-        app:layout_constraintTop_toBottomOf="@+id/SpinnerCarreras"
-        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/coordLayoutButton"
+        app:layout_constraintTop_toBottomOf="@id/tvFechaNacimiento"
+        android:enabled="false"
 
-        />
-
-        <TextView
-            android:id="@+id/tvDia"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            tools:text="@string/guionMedio"
-            android:textSize="20sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cumpleaños"
+            android:hint= "@string/cumple"
             android:textColor="@color/black"
-           app:layout_constraintStart_toEndOf="@id/coordLayoutButton"
-            app:layout_constraintTop_toBottomOf="@+id/tvFechaNacimiento"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.2"
-            app:layout_constraintEnd_toStartOf="@id/tvMes"
-            android:layout_marginRight="5dp"
-            app:layout_constraintHorizontal_chainStyle="packed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
             />
 
-        <TextView
-            android:id="@+id/tvMes"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            tools:text="@string/guionMedio"
-
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toEndOf="@+id/tvDia"
-            app:layout_constraintTop_toBottomOf="@+id/tvFechaNacimiento"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tvAño"
-            app:layout_constraintVertical_bias="0.2"
-            android:layout_marginRight="5dp"
-            />
-        <TextView
-            android:id="@+id/tvAño"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            tools:text="@string/guionMedio"
-
-            android:layout_marginEnd="30dp"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toEndOf="@+id/tvMes"
-            app:layout_constraintTop_toBottomOf="@+id/tvFechaNacimiento"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.2"
-            app:layout_constraintEnd_toEndOf="parent"
-            />
-
-
-
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 
