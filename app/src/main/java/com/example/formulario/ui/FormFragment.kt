@@ -1,7 +1,6 @@
 package com.example.formulario.ui
 
 import android.os.Bundle
-import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +11,6 @@ import com.example.formulario.Model.Alumno
 import com.example.formulario.Model.DatePicker
 import com.example.formulario.R
 import com.google.android.material.textfield.TextInputEditText
-import com.google.android.material.textfield.TextInputLayout
 import java.util.*
 
 
@@ -27,7 +25,6 @@ class FormFragment : Fragment() {
     private lateinit var carrerasCompleteTV:AutoCompleteTextView
     private lateinit var alumno: Alumno
     private lateinit var carreraAdapter: ArrayAdapter<String>
-    private val carrerasList = Alumno.CarrerasIngenieria
     private var indexCarrera:Int? = null
     private var edadAlumno: Int? = null
     private var signoZodiacal:String? = null
@@ -190,7 +187,7 @@ class FormFragment : Fragment() {
     }
 
     private fun showDatePickerCalendar() {
-        val datePicker: DatePicker = DatePicker{ dia, mes, año -> onDateSelect(dia,mes, año) }
+        val datePicker = DatePicker{ dia, mes, año -> onDateSelect(dia,mes, año) }
         datePicker.show(parentFragmentManager,"datePicker")
     }
     private fun onDateSelect(dia:Int,mes:Int,año:Int){

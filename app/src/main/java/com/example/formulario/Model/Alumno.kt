@@ -36,7 +36,7 @@ class Alumno(private var name:String
 
     var email:String? = null
     set(value){
-        if (value!!.contains('@')){
+        if (value!!.contains('@') && value!!.contains(".com")){
             field = value
         }
 
