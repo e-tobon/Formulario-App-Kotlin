@@ -92,7 +92,7 @@ class ResultFragment : Fragment() {
         mactivity?.supportActionBar?.setDisplayHomeAsUpEnabled(false)
         mactivity?.supportActionBar?.title = "Formulario"
 
-        var mfragment = FormFragment()
+
         super.onDestroy()
     }
 

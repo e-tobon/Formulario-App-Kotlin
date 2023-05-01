@@ -30,4 +30,64 @@
     <string name="HelperNombre">Nombre y Apellido(s)</string>
     <string name="helpercorreo">Cualquier dominio</string>
     <string name="helperNumCuenta">9 Digitos</string>
+
+    <!--SIGNO CHINO-->
+
+    <string name="MONO">MONO</string>
+    <string name="GALLO">GALLO</string>
+    <string name="PERRO">PERRO</string>
+    <string name="CERDO">CERDO</string>
+    <string name="RATA">RATA</string>
+    <string name="BUEY">BUEY</string>
+    <string name="TIGRE">TIGRE</string>
+    <string name="CONEJO">CONEJO</string>
+    <string name="DRAGON">DRAGÓN</string>
+    <string name="SERPIENTE">SERPIENTE</string>
+    <string name="CABALLO">CABALLO</string>
+    <string name="CABRA">CABRA</string>
+
+
+    <!--SIGNO ZODIACO-->
+
+    <string name="ARIES">ARIES</string>
+    <string name="CANCER">CANCER</string>
+    <string name="CAPRICORNIO">CAPRICORNIO</string>
+    <string name="ESCORPIO">ESCORPIO</string>
+    <string name="GEMINIS">GEMINIS</string>
+    <string name="LEO">LEO</string>
+    <string name="LIBRA">LIBRA</string>
+    <string name="PISCIS">PISCIS</string>
+    <string name="SAGRITARIO">SAGITARIO</string>
+    <string name="TAURO">TAURO</string>
+    <string name="VIRGO">VIRGO</string>
+    <string name="ACUARIO">ACUARIO</string>
+
+
+    <!--MESES AÑO-->
+
+    <string name="ENERO">Enero</string>
+    <string name="FEBRERO">Febrero</string>
+    <string name="MARZO">Marzo</string>
+    <string name="ABRIL">Abril</string>
+    <string name="MAYO">Mayo</string>
+    <string name="JUNIO">Junio</string>
+    <string name="JULIO">Julio</string>
+    <string name="AGOSTO">Agosto</string>
+    <string name="SEPTIEMBRE">Septiembre</string>
+    <string name="OCTUBRE">Octubre</string>
+    <string name="NOVIEMBRE">Noviembre</string>
+    <string name="DICIEMBRE">Diciembre</string>
+    <!--TOAST-->
+    <string name="ToasNaciemiento">Ingrese su fecha de nacimiento</string>
+    <string name="toast_ingenieria">Seleccione la ingeniería que estudia</string>
+    <string name="toast_cuenta">Ingresa un numero de cuenta valido</string>
+    <string name="toast_correo">Ingresa un correo electronico valido</string>
+    <string name="toast_nombre">Ingresa tu nombre</string>
+    <string name="toas_nombre">Ingresa tu nombre</string>
+    <string name="toast_date">La fecha no es valida</string>
+
+
+
+
+
 </resources>

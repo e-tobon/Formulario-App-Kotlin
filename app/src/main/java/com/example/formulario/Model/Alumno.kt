@@ -73,6 +73,7 @@ class Alumno(private var name:String
             "Ingeniería Mecatrónica",
             "Ingeniería en Sistemas Biomédicos"
 
+
             )
 
     }
